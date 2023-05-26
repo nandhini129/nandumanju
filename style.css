@@ -84,15 +84,69 @@ display: block;
     color: purple;
     font-size: 40px;
 }
-.social-media-linkss{
+.social-media-links{
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    right:-50px;
+    right: 0;
 }
-.social-media-linkss i{
-    border: 3px solid pink;
+.social-media-links i{
+    border: 1px solid blue;
     padding: 5px 50px 5px 5px;
+    transform: translateX(50px);
+    transition:all 0.5s ease-in-out ;
 
 }
-.social-media-linkss i:hover{
-    right:0px;
+.social-media-links i:hover{
+    transform: translateX(0px);
+    transition:all 0.5s ease-in-out ;
+}  
+.facebook{
+    background: pink;
+}
+.instagram{
+    background: crimson;
+}
+.whatsapp{
+    background: green;
+}
+.twitter{
+    background: purple;
+}
+.google{
+    background: blue;
+}
+.home-services-content{
+   
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
+
+}
+.services-cards{
+    display: grid;
+    row-gap:  20px;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.cards{
+    border: 1px solid purple;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background: palevioletred;
+}
+.cards:hover{
+    color: white;
+    background: black;
+}
+.home-about-section{
+   background:  linear-gradient(75deg, #65258a 10%, #e80566) !important
+}
+.home-service-section h4{
+    color: #e80566;
+
 }
